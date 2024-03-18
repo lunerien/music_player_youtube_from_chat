@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "music-from-rocket-to-yt"
+version = "0.1.0"
+description = "Music player from provided youtube url in rocket chat"
+authors = ["Lunerien <luki90003@gmail.com>"]
+readme = "README.md"
+packages = [{include = "music_from_rocket_to_yt"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+python-vlc = "^3.0.20123"
+pafy = "^0.5.5"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.9.0"
+pylint = "^3.1.0"
+black = "^24.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
